@@ -1,0 +1,312 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Humedal Clean Community">
+  <div class="app-container">
+    <header>
+      <a href="#" class="logo">
+        <img src="/favicon.png" alt="Humedal Clean Community" width="50" />
+      </a>
+      <nav>
+        <a class="rise" href="#">RISE</a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container hero-container">
+          <div class="hero-content">
+            <h1>Descubre la Belleza de los Humedales</h1>
+            <p>
+              Humedal Clean Community es una aplicación centrada en la naturaleza que te conecta
+              con las maravillas del mundo natural a través del intercambio
+              social, contenido educativo y gamificación.
+            </p>
+            <div class="cta-container">
+              <a href="/humedal.apk" class="cta-button" download>Descargar Humedal Clean Community</a>
+            </div>
+          </div>  
+        </div>
+      </section>
+      <section class="social-sharing">
+        <div class="container">
+          <div class="content-grid">
+            <div class="text-content">
+              <div class="tag">Compartir Social</div>
+              <h2>Conéctate con Amantes de la Naturaleza</h2>
+              <p>
+                Comparte tus descubrimientos de la naturaleza, fotos y
+                experiencias con una comunidad de personas afines. Participa en
+                discusiones, haz preguntas y aprende de otros.
+              </p>
+              <a href="#" class="button">Únete a la Comunidad</a>
+            </div>
+            <div class="image-container">
+              <img src="/asset2.jpeg" alt="Compartir Social" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="educational-content">
+        <div class="container">
+          <div class="content-grid">
+            <div class="image-container">
+              <img src="/asset1.jpeg" alt="Contenido Educativo" />
+            </div>
+            <div class="text-content">
+              <div class="tag">Contenido Educativo</div>
+              <h2>Aprende Sobre el Mundo Natural</h2>
+              <p>
+                Explora una vasta biblioteca de contenido educativo, desde
+                artículos informativos y videos hasta cuestionarios interactivos
+                y desafíos. Profundiza tu comprensión del medio ambiente, la
+                vida silvestre y las prácticas sostenibles.
+              </p>
+              <a href="#" class="button">Explora la Biblioteca</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="gamification">
+        <div class="container">
+          <div class="content-grid">
+            <div class="text-content">
+              <div class="tag">Gamificación</div>
+              <h2>Gana Recompensas por Explorar la Naturaleza</h2>
+              <p>
+                Participa en una variedad de desafíos, misiones y logros para
+                ganar insignias, puntos y otras recompensas. Desbloquea nuevo
+                contenido, funciones y elementos virtuales a medida que avanzas
+                en la aplicación.
+              </p>
+              <a href="#" class="button">Comienza a Explorar</a>
+            </div>
+            <div class="image-container">
+              <img src="/asset3.jpeg" alt="Gamificación" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Humedal Clean Community. Todos los derechos reservados.</p>
+    </footer>
+  </div>
+
+  <style>
+    /* Estilos generales */
+    :root {
+      --primary-color: #007BFF; /* Cambiado a azul */
+      --text-color: #000; /* Cambiado a negro */
+      --background-color: #fff;
+      --muted-color: #f4f4f4;
+      --footer-background: #f9f9f9;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--text-color);
+      background-color: var(--background-color);
+      margin: 0;
+      padding: 0;
+    }
+
+    .app-container {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      background-color: var(--background-color);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    header nav {
+      display: flex;
+      gap: 1rem;
+    }
+
+    header a {
+      text-decoration: none;
+      color: var(--text-color);
+      font-weight: 500;
+    }
+
+    /* Main content */
+    main {
+      flex: 1;
+    }
+
+    section {
+      padding: 4rem 0;
+    }
+
+    .hero {
+      background-image: url("/hero-bg.jpg");
+      background-size: cover;
+      background-position: center;
+      color: black; /* Cambiado a negro */
+      text-align: center;
+      display: flex; /* Añadido para centrar verticalmente */
+      align-items: center; /* Añadido para centrar verticalmente */
+      justify-content: center; /* Añadido para centrar horizontalmente */
+    }
+
+    .hero-content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem; /* Añadido para dar espacio alrededor del contenido */
+      background-color: rgba(
+        255,
+        255,
+        255,
+        0.8
+      ); /* Fondo semi-transparente para mejorar la legibilidad */
+      border-radius: 10px; /* Bordes redondeados */
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .cta-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .cta-button,
+    .button {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background-color: var(--primary-color);
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .app-preview img {
+      max-width: 300px;
+      height: auto;
+    }
+
+    .content-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 0.25rem 0.5rem;
+      background-color: var(--muted-color);
+      border-radius: 5px;
+      font-size: 0.875rem;
+      margin-bottom: 1rem;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: var(--footer-background);
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    footer p {
+      font-size: 0.875rem;
+    }
+
+    footer nav {
+      display: flex;
+      gap: 1rem;
+    }
+
+    footer a {
+      color: var(--text-color);
+      text-decoration: none;
+      font-size: 0.875rem;
+    }
+
+    /* Dark mode */
+    .dark {
+      --text-color: #000; /* Cambiado a negro incluso en modo oscuro */
+      --background-color: #1a1b1e;
+      --muted-color: #2c2d30;
+      --footer-background: #2c2d30;
+    }
+
+    .dark .hero {
+      background-image: url("/hero-bg-dark.jpg");
+      color: black; /* Asegura que el texto del héroe sea negro en modo oscuro */
+    }
+
+    .rise {
+      font-weight: 900;
+      color: var(--primary-color);
+    }
+
+    /* Responsive design */
+    @media (max-width: 768px) {
+      .content-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cta-container {
+        flex-direction: column;
+      }
+
+      header,
+      footer {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      header nav,
+      footer nav {
+        margin-top: 1rem;
+      }
+    }
+
+    .hero-image img {
+      max-width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  </style>
+</Layout>
